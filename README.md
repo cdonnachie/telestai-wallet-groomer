@@ -37,7 +37,7 @@ Normally, there should be no need to use any of the optional arguments. If you'r
 
 ```
 usage: telestai-groomer.py [-h] [-i MAX_AMT_INPUT] [-n MAX_NUM_TX]
-                  [-o MAX_AMT_PER_OUTPUT] [-f FEE]
+                  [-o MAX_AMT_PER_OUTPUT] [-f FEE] [--reuse] [-a] [--auto] 
                   rpc_server
 
 This script generates transaction(s) to cleanup your wallet. It looks for the
@@ -63,4 +63,8 @@ optional arguments:
                         The maximum amount (in TLS) to send to a single output
                         address (default: 10000 TLS)
   -f FEE, --fee FEE     The amount of fees (in TLS) to use for the transaction
+  --reuse               Reuse the same address for the consolidated funds (default: False)
+  -a ADDRESS, --address ADDRESS
+                        The address to send the consolidated funds to
+  --auto                Automatically answer "yes" to all questions
 ```
