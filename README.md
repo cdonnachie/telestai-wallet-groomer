@@ -27,7 +27,7 @@ Replace `password` with your wallet password. `300` is the number of seconds the
 
 You should be able to simply run:
 
-`python groomer.py "http://user:password@127.0.0.1:8766"`
+`python3 telestai-groomer.py "http://user:password@127.0.0.1:8766"`
 
 (replace the user, password, and port if you've changed it from the `telestai.conf` example above)
 
@@ -36,7 +36,7 @@ You should be able to simply run:
 Normally, there should be no need to use any of the optional arguments. If you're having trouble with the tool, you can run `python groomer.py -h` to get the help page:
 
 ```
-usage: groomer.py [-h] [-i MAX_AMT_INPUT] [-n MAX_NUM_TX]
+usage: telestai-groomer.py [-h] [-i MAX_AMT_INPUT] [-n MAX_NUM_TX]
                   [-o MAX_AMT_PER_OUTPUT] [-f FEE]
                   rpc_server
 
